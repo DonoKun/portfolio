@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Donovan Gomez | Web Developer</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION -->
+    <header>
+        <h1 class="logo">{<span>D</span>/<span class="g">G</span>} </h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span><i class="fas fa-hamburger"></i></span>
+        </label>
+    </header>
+
+    <main>
+
+        <!-- landing section -->
+
+        <section id="landing">
+            <div class="overlay"></div>
+            <div class="landing-content">
+                <h1>Hi I'm <span>Donovan</span> </h1>
+                <p>A front end developer from Los Angeles trying to make something cool.</p>
+                <a href="#about" class="btn">Get to know me!</a>
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about">
+            <h1>Who?</h1>
+            <p>Hi! My name is Donovan and I'm a self taught developer from Los Angeles, California. I'm always learning
+                new technologies to put in my toolbox so I can build something cool. I've been spending a lof of time to master the fundamentals of front end development and will dive into React soon. With the time I have left I love skateboarding around LA and playing fighting games like Street Fighter. </p>
+        </section>
+
+        <section id="tool-box">
+            <h1>My Toolbox <i class="fas fa-toolbox"></i></h1>
+            <div class="tool-box-content">
+                <div class="tool-box-item">
+                    <h2><i class="fas fa-laptop-code"></i> Dev</h2>
+                    <ul>
+                        <li>HTML 5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Mobile & Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="tool-box-item">
+                    <h2><i class="fas fa-paint-brush"></i> Design Toolkit</h2>
+                    <ul>
+                        <li>Wireframing</li>
+                        <li>AdobeXd</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div class="tool-box-item">
+                    <h2><i class="fas fa-book-open"></i> Libraries & Frameworks</h2>
+                    <ul>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="projects">
+            <div class="portfolio">
+                <h1>Portfolio</h1>
+                <div class="portfolio-box">
+                    <div class="portfolio-image">
+                    <img src="images/sls.png" class="portfolio-img">
+                    </div>
+                    <div class="portfolio-content">
+                        <h2>SLS Countdown Timer</h2>
+                        <span>Technology Used</span>
+                        <ul>
+                            <li>Vanilla Javascript</li>
+                        </ul>
+                        <div class="portfolio-btns">
+                            <a href="#" class="portfolio-btn">Demo</a>
+                            <a href="#" class="portfolio-btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <div class="portfolio-image">
+                    <img src="images/tels.png" class="portfolio-img">
+                    </div>
+                    <div class="portfolio-content">
+                        <h2>Tel's Barbershop Website</h2>
+                        <span>Technology Used:</span>
+                        <ul>
+                            <li>CSS Grid</li>
+                            <li>CSS Flexbox</li>
+                        </ul>
+                        <div class="portfolio-btns">
+                            <a href="#" class="portfolio-btn">Demo</a>
+                            <a href="#" class="portfolio-btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+               
+
+            </div>  <!--portfolio div-->
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h1>Let's get in touch, maybe a coffee?</h1>
+            <p>Email me! <i class="fas fa-envelope"></i> donovan@donovangomez.dev </p>
+                <div class="social-icons">
+
+                    <h3>Let's socialize</h3>
+                    <ul class="social">
+                        <li><a href="https://codepen.io/strawburry/" target="_blank"><i class="fab fa-codepen"></i></a>
+                        </li>
+                        <li><a href="https://github.com/DonoKun" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/donovan-gomez-83aa57149/" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://twitter.com/_dono_kun" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+        </section>
+
+    </main>
+
+
+    <footer>Made with <i class="fas fa-heart"></i> </footer>
+
+<script src="app.js"></script>
+</body>
+
+</html>

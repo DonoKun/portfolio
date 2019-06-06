@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster|Roboto");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif; }
+
+header {
+  background-color: #073B4C;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+  border-top: 5px solid #118AB2; }
+
+header nav {
+  background-color: #073B4C;
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out; }
+
+.nav-toggle {
+  display: none; }
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin-left: 1em;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  color: white;
+  cursor: pointer; }
+
+nav ul {
+  list-style: none; }
+
+nav li {
+  margin-left: 1em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-transform: uppercase; }
+
+.fa-hamburger {
+  color: #fff; }
+
+.logo {
+  color: #fff; }
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: 150ms ease-in-out 250ms; }
+
+.nav-toggle:checked ~ nav {
+  display: block;
+  transform: scale(1, 1); }
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 300ms; }
+
+#landing {
+  height: 100vh;
+  background-image: url("images/pattern.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.landing-content h1 {
+  color: #fff;
+  font-size: 3rem; }
+
+.landing-content span {
+  font-family: 'Lobster', cursive;
+  font-size: 4rem; }
+
+.landing-content .btn:hover {
+  background-color: #06D6A0;
+  transition: 1s; }
+
+.landing-content p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-size: 2rem;
+  padding: 2rem 3rem; }
+
+.btn {
+  padding: .8rem 3rem;
+  background-color: #118AB2;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff; }
+
+#about {
+  text-align: left;
+  padding: 7rem;
+  background: #118AB2;
+  position: relative;
+  z-index: 10;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
+  margin-bottom: 7vw;
+  color: #fff;
+  font-size: 1.4rem; }
+
+#tool-box {
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.tool-box-item {
+  margin: 2rem 0;
+  padding: 2rem;
+  padding-bottom: 5rem;
+  border: 0;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2); }
+
+.tool-box-item ul {
+  list-style: none; }
+
+#projects {
+  padding: 5rem; }
+
+#projects h1 {
+  text-align: center; }
+
+.portfolio-img {
+  max-width: 90%;
+  height: auto; }
+
+.portfolio-btns {
+  margin-top: 1rem; }
+
+.portfolio-btn {
+  text-decoration: none;
+  padding: .5rem 2rem;
+  margin: .5rem;
+  background-color: #118AB2;
+  outline: none;
+  border-radius: 15px;
+  color: #fff; }
+
+.portfolio-btn:hover {
+  transition: 1s;
+  background-color: #06D6A0;
+  color: #fff; }
+
+.portfolio-box {
+  margin: 1rem; }
+
+#contact {
+  text-align: center;
+  padding: 7rem;
+  background-color: #118AB2;
+  border-top: 2px solid #FFD166;
+  color: #fff; }
+
+#contact h1 {
+  margin: 1rem; }
+
+#contact h2 {
+  margin: 5rem; }
+
+.social {
+  list-style: none;
+  display: flex;
+  justify-content: center; }
+
+.social a {
+  margin: .5rem;
+  color: #fff;
+  font-size: 2rem; }
+
+.fa-github:hover {
+  transition: 1s;
+  color: #333; }
+
+.fa-twitter:hover {
+  transition: 1s;
+  color: #38A1F3; }
+
+.fa-codepen:hover {
+  transition: 1s;
+  color: #333; }
+
+.fa-linkedin-in:hover {
+  transition: 1s;
+  color: #0077B5; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #06D6A0;
+  color: #fff; }
+
+@media screen and (min-width: 960px) {
+  .nav-toggle-label {
+    display: none; }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr; }
+
+  .logo {
+    grid-column: 2/ span 1; }
+
+  header nav {
+    all: unset; }
+
+  header ul {
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+
+  nav a:hover {
+    transition: 1s;
+    color: #06D6A0; }
+
+  .tool-box-content {
+    display: flex;
+    justify-content: space-around; }
+
+  .tool-box-item {
+    padding: 3rem; }
+
+  .portfolio-img {
+    max-width: 90%; }
+
+  .portfolio-box {
+    display: flex; }
+
+  .portfolio-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center; }
+
+  .portfolio-btns {
+    display: flex; } }
+
+/*# sourceMappingURL=main.css.map */
