@@ -186,8 +186,9 @@ header {
     
 
     .portfolio-img {
-        width: 910px;
+        max-width: 100%;
         border: 4px solid $cornflower-blue;
+        border-radius: 4px;
     }
 
     .portfolio-btns {
