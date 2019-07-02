@@ -7,6 +7,9 @@
   scroll-behavior: smooth;
   font-family: 'Roboto', sans-serif; }
 
+*::selection {
+  background-color: #E9A9E8; }
+
 header {
   background-color: #073B4C;
   position: fixed;
@@ -121,6 +124,9 @@ nav a {
   margin-left: 2rem;
   margin-right: 2rem; }
 
+#tool-box span {
+  color: #118AB2; }
+
 .tool-box-item {
   margin: 2rem 0;
   padding: 2rem;
@@ -135,12 +141,35 @@ nav a {
   padding: 5rem; }
 
 #projects h1 {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 4rem; }
 
-.portfolio-img {
-  max-width: 100%;
-  border: 4px solid #118AB2;
-  border-radius: 4px; }
+#projects span {
+  color: #118AB2; }
+
+.profolio-wrapper {
+  display: flex;
+  flex-direction: column; }
+
+.card-content img {
+  max-width: 100%; }
+
+.card-content p {
+  margin: 0 1.5rem; }
+
+.card {
+  margin: 2rem 0;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 32rem;
+  position: relative;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2); }
+
+.card-content h2 {
+  background-color: #118AB2;
+  color: #ddd; }
 
 .portfolio-btns {
   margin-top: 1rem; }
@@ -166,8 +195,15 @@ nav a {
   text-align: center;
   padding: 7rem;
   background-color: #118AB2;
-  border-top: 2px solid #FFD166;
+  border-top: 4px solid #E9A9E8;
   color: #fff; }
+
+.email {
+  color: #fff; }
+
+.email:hover {
+  transition: 1s;
+  color: #E9A9E8; }
 
 #contact h1 {
   margin: 1rem; }
@@ -238,19 +274,34 @@ footer {
   .tool-box-item {
     padding: 3rem; }
 
-  .portfolio-img {
-    max-width: 90%; }
-
-  .portfolio-box {
+  .portfolio-wrapper {
     display: flex; }
 
-  .portfolio-content {
+  .card {
+    margin: 0 1rem;
+    border-radius: 10px;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center; }
+    height: 32rem;
+    position: relative;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2); }
+
+  .card-content {
+    display: flex;
+    flex-direction: column; }
+
+  .card-content h3 {
+    padding: .75rem; }
+
+  .card-content img {
+    max-width: 100%; }
 
   .portfolio-btns {
-    display: flex; } }
+    display: flex;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    justify-content: center; } }
 
 /*# sourceMappingURL=main.css.map */
