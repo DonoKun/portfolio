@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  overflow-x: none;
   scroll-behavior: smooth; }
 
 header {
@@ -136,7 +137,8 @@ nav a {
 
 .profolio-wrapper {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  border: 3px solid red; }
 
 .card-content img {
   max-width: 100%; }
@@ -145,12 +147,13 @@ nav a {
   margin: 0 1.5rem; }
 
 .card {
-  margin: 2rem 0;
+  margin: 2rem auto;
   border-radius: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 32rem;
+  height: 500px;
+  width: 380px;
   position: relative;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2); }
 
@@ -239,6 +242,13 @@ nav a {
   transition: 1s;
   color: #0077B5; }
 
+.fa-envelope:hover {
+  color: #E9A9E8;
+  transition: 1s; }
+
+.email {
+  margin: 0 2rem; }
+
 footer {
   background-color: #76FDF9;
   text-align: center;
@@ -288,6 +298,9 @@ footer {
     position: relative;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2); }
 
+  .card img {
+    max-width: 100%; }
+
   .card-content {
     display: flex;
     flex-direction: column; }
@@ -295,7 +308,7 @@ footer {
   .card-content h3 {
     padding: .75rem; }
 
-  .card-content img {
+  .card img {
     max-width: 100%; }
 
   #about {

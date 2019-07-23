@@ -10,6 +10,7 @@ $riko-pink: #E9A9E8;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    overflow-x: none;
     scroll-behavior: smooth;
 }
 
@@ -152,7 +153,6 @@ header {
 }
 
 // portfolio section
-// portfolio section
 
 #projects {
     padding: 5rem;
@@ -166,6 +166,7 @@ header {
 .profolio-wrapper {
     display: flex;
     flex-direction: column;
+    border: 3px solid red;
 }
 
 .card-content img {
@@ -177,15 +178,19 @@ header {
 }
 
 .card {
-    margin: 2rem 0;
+    margin: 2rem auto;
     border-radius: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    height: 32rem;
+    height: 500px;
+    width: 380px;
     position: relative;
     box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
+
+
+
 
 .card-content h2 {
     background-color: $red;
@@ -275,6 +280,13 @@ header {
 } .fa-linkedin-in:hover {
     transition: 1s;
     color: #0077B5;
+} .fa-envelope:hover {
+    color: $riko-pink;
+    transition: 1s;
+}
+
+.email {
+    margin: 0 2rem;
 }
 
 // footer
@@ -349,6 +361,11 @@ footer {
     }
 
 
+    .card img {
+        max-width: 100%;
+    }
+
+
     .card-content {
         display: flex;
         flex-direction: column;
@@ -358,7 +375,7 @@ footer {
         padding: .75rem;
     }
 
-    .card-content img {
+    .card img {
         max-width: 100%;
     }
 
@@ -373,3 +390,4 @@ footer {
     }
  
  }
+
