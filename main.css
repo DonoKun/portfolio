@@ -1,25 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster|Roboto");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Lato&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-  font-family: 'Roboto', sans-serif; }
-
-*::selection {
-  background-color: #E9A9E8; }
+  font-family: 'Lato', sans-serif; }
 
 header {
-  background-color: #073B4C;
+  background-color: #FD767A;
   position: fixed;
   width: 100%;
   text-align: center;
   z-index: 999;
-  border-top: 5px solid #118AB2; }
+  border-top: 5px solid #76FDF9; }
 
 header nav {
-  background-color: #073B4C;
+  background-color: #FD767A;
   position: absolute;
   width: 100%;
   text-align: left;
@@ -59,10 +54,15 @@ nav li {
 .logo {
   color: #fff; }
 
+.logo span {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: italic; }
+
 nav a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  font-weight: 700;
   transition: 150ms ease-in-out 250ms; }
 
 .nav-toggle:checked ~ nav {
@@ -75,57 +75,43 @@ nav a {
 
 #landing {
   height: 100vh;
-  background-image: url("images/pattern.png");
+  background-image: linear-gradient(to bottom, #fd767a, #ff7486, #ff7392, #ff729e, #ff73ab, #ff77a8, #ff7ba5, #ff7fa2, #ff8a92, #ff9784, #ffa67a, #fdb676);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center; }
-
-.landing-content h1 {
-  color: #fff;
-  font-size: 3rem; }
-
-.landing-content span {
-  font-family: 'Lobster', cursive;
-  font-size: 4rem; }
-
-.landing-content .btn:hover {
-  background-color: #06D6A0;
-  transition: 1s; }
-
-.landing-content p {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  color: #fff;
-  font-size: 2rem;
-  padding: 2rem 3rem; }
-
-.btn {
-  padding: .8rem 3rem;
-  background-color: #118AB2;
-  border-radius: 20px;
-  text-decoration: none;
+  align-items: center;
+  text-align: center;
   color: #fff; }
 
-#about {
-  text-align: left;
-  padding: 7rem;
-  background: #118AB2;
-  position: relative;
-  z-index: 10;
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
-  margin-bottom: 7vw;
+#landing h1 {
+  font-size: 4rem; }
+
+#landing p {
+  margin-top: 1rem;
+  font-size: 2.3rem;
+  margin-bottom: 3rem; }
+
+#landing .btn {
+  text-decoration: none;
   color: #fff;
-  font-size: 1.4rem; }
+  padding: 1rem 3rem;
+  border: 2px solid #fff;
+  font-size: 1.3rem;
+  border-radius: 5px; }
+
+#landing .btn:hover {
+  transition: 1s;
+  background-color: #7AFD76;
+  color: #000; }
 
 #tool-box {
+  padding-top: 3rem;
   text-align: center;
   margin-left: 2rem;
   margin-right: 2rem; }
 
 #tool-box span {
-  color: #118AB2; }
+  color: #FD767A; }
 
 .tool-box-item {
   margin: 2rem 0;
@@ -145,7 +131,7 @@ nav a {
   margin-bottom: 4rem; }
 
 #projects span {
-  color: #118AB2; }
+  color: #FD767A; }
 
 .profolio-wrapper {
   display: flex;
@@ -159,7 +145,7 @@ nav a {
 
 .card {
   margin: 2rem 0;
-  border-radius: 10px;
+  border-radius: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -168,58 +154,73 @@ nav a {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2); }
 
 .card-content h2 {
-  background-color: #118AB2;
-  color: #ddd; }
+  background-color: #FD767A;
+  color: #fff; }
 
 .portfolio-btns {
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem; }
 
 .portfolio-btn {
   text-decoration: none;
   padding: .5rem 2rem;
   margin: .5rem;
-  background-color: #118AB2;
+  background-color: #FD767A;
   outline: none;
   border-radius: 15px;
   color: #fff; }
 
 .portfolio-btn:hover {
   transition: 1s;
-  background-color: #06D6A0;
+  background-color: #7AFD76;
   color: #fff; }
 
 .portfolio-box {
   margin: 1rem; }
 
-#contact {
-  text-align: center;
-  padding: 7rem;
-  background-color: #118AB2;
-  border-top: 4px solid #E9A9E8;
-  color: #fff; }
+#about {
+  background-color: #FD767A;
+  font-size: 1.2rem;
+  padding: 3rem; }
 
-.email {
-  color: #fff; }
+.about-content {
+  margin: 0 1rem;
+  line-height: 1.6;
+  color: white; }
 
-.email:hover {
-  transition: 1s;
-  color: #E9A9E8; }
-
-#contact h1 {
-  margin: 1rem; }
-
-#contact h2 {
-  margin: 5rem; }
-
-.social {
+#about ul {
   list-style: none;
   display: flex;
+  margin: 1rem;
   justify-content: center; }
+
+#about li {
+  margin: 1rem; }
+
+.social {
+  text-align: center;
+  margin-top: 2rem; }
+
+.social h2 {
+  margin-bottom: 1rem;
+  color: #fff; }
+
+.social hr {
+  color: #76FDF9;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto; }
 
 .social a {
   margin: .5rem;
   color: #fff;
-  font-size: 2rem; }
+  font-size: 2rem;
+  text-decoration: none; }
 
 .fa-github:hover {
   transition: 1s;
@@ -238,10 +239,9 @@ nav a {
   color: #0077B5; }
 
 footer {
-  display: flex;
-  justify-content: center;
-  background-color: #06D6A0;
-  color: #fff; }
+  background-color: #76FDF9;
+  text-align: center;
+  border-bottom: 2px solid #7AFD76; }
 
 @media screen and (min-width: 960px) {
   .nav-toggle-label {
@@ -265,7 +265,7 @@ footer {
 
   nav a:hover {
     transition: 1s;
-    color: #06D6A0; }
+    color: #76FDF9; }
 
   .tool-box-content {
     display: flex;
@@ -297,11 +297,12 @@ footer {
   .card-content img {
     max-width: 100%; }
 
-  .portfolio-btns {
+  #about {
+    display: flex; }
+
+  .about-content {
     display: flex;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
+    flex-direction: column;
     justify-content: center; } }
 
 /*# sourceMappingURL=main.css.map */
