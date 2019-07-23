@@ -286,7 +286,8 @@ footer {
     padding: 3rem; }
 
   .portfolio-wrapper {
-    display: flex; }
+    display: flex;
+    justify-content: space-around; }
 
   .card {
     margin: 0 1rem;
