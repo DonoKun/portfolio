@@ -1,0 +1,1 @@
+Hey thanks for checking out my portfolio. I'm not really sure what I need to add to this read me to be honest. My projects are obviously lacking so I'll be adding more to it soon. The site is built in just CSS with a heavy use of CSS Flexbox and CSS transitions.
