@@ -327,9 +327,8 @@ footer {
   .tool-box-item {
     padding: 3rem; }
 
-  .portfolio-wrapper {
-    display: flex;
-    justify-content: space-around; }
+  .row {
+    display: flex; }
 
   .card {
     margin: 0 1rem;

@@ -389,12 +389,14 @@ footer {
         padding: 3rem;
     }
 
-    // portfolio section
       // portfolio section 
-      .portfolio-wrapper {
-        display: flex;
-        justify-content: space-around;
+    //   .portfolio-wrapper {
+    //     display: flex;
+    //     justify-content: space-around;
 
+    // }
+    .row {
+        display: flex;
     }
 
     .card {
