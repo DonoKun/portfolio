@@ -389,12 +389,7 @@ footer {
         padding: 3rem;
     }
 
-      // portfolio section 
-    //   .portfolio-wrapper {
-    //     display: flex;
-    //     justify-content: space-around;
 
-    // }
     .row {
         display: flex;
     }
@@ -405,7 +400,7 @@ footer {
         text-align: center;
         display: flex;
         flex-direction: column;
-        height: 32rem;
+        height: 36rem;
         position: relative;
         box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
     }
@@ -415,6 +410,9 @@ footer {
         max-width: 100%;
     }
 
+    .card p {
+        padding-bottom: 3rem;
+    }
 
     .card-content {
         display: flex;
@@ -425,9 +423,7 @@ footer {
         padding: .75rem;
     }
 
-    .card img {
-        max-width: 100%;
-    }
+
 
     // about and contact section
     #about {
