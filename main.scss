@@ -1,36 +1,37 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap');
 
-$red: #FD767A;
-$light-blue: #76FDF9;
-$green: #7AFD76;
+$black: #0B0B0B;
+$purple: #845ec2;
 $riko-pink: #E9A9E8;
+$blue: #3274d2;
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
 
-// Section H1s
-.section-header {
-    margin-bottom: 4rem;
+// header
+header {
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
 }
 
-// navigation and navbar
-
+// navigation
 header {
-    background-color: $red;
+    background-color: $black;
     position: fixed;
     width: 100%;
     text-align: center;
     z-index: 999;
-    border-top: 5px solid $light-blue;
+ 
     } 
     
     header nav {
-        background-color: $red;
+        background-color: $black;
         position: absolute;
         width: 100%;
         text-align: left;
@@ -100,76 +101,129 @@ header {
          transition: opacity 250ms ease-in-out 300ms;
       }
 
-// landing section 
-#landing {
-    height: 100vh;
-    background-image: linear-gradient(to bottom, #fd767a, #ff7486, #ff7392, #ff729e, #ff73ab, #ff77a8, #ff7ba5, #ff7fa2, #ff8a92, #ff9784, #ffa67a, #fdb676);
+
+.nav-toggle {
+    display: none;
+}
+
+ul {
+    list-style: none;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+} ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+} ul li {
+    margin: 1rem;
+}
+
+.hero {
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    align-content: center;
     color: #fff;
-} #landing h1 {
-    font-size: 4rem;
-} #landing p {
-    margin-top: 1rem;
-    font-size: 2.3rem;
-    margin-bottom: 3rem;
-} #landing .btn {
+    height: 100vh;
+    background-color: $black;
+}
+
+.hero-content {
+    margin-top: -15rem;
+}
+
+.hero h1 {
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    line-height: 2;
+    padding-right: 3rem;
+    padding-left: 3rem;
+
+ }
+
+ .hero h1::after {
+     content: "";
+     height: 3rem;
+     width: 0.3rem;
+     background-color: #fff;
+     position: absolute;
+     margin-top: 1.6rem;
+     margin-left: .3rem;
+    animation: blinking-cursor 1s infinite;
+ }
+
+ .hero-button {
+     display: flex;
+     justify-content: center;
+ }
+
+ .hero-btn{
+    color: #fff;
     text-decoration: none;
+    background-image: linear-gradient(to left, #845ec2, #7862c7, #6b66ca, #5c6ace, #4b6ed0, #4071d1, #3274d2, #2277d2, #1a7ad2, #117cd1, #077fd0, #0081cf);
+   background-size: 300%;
+   background-position: right;
+    width: 200px;    
+   padding: 0;
+   border-radius: 6px;
+   display: block;
+   transition: 1s;
+} 
+
+.hero-btn:hover,
+.her-btn:focus {
+    background-position: left;
+}
+
+.hero-btn span {
+    padding: 1rem;
     color: #fff;
-    padding: .5rem 2rem;
-    border: 2px solid #fff;
-    font-size: 1.3rem;
-    border-radius: 5px;
-}    .landing-content {
-    margin: 0 3rem;
+    background-color: $black;
+    display: grid;
+    place-items: center;
+    margin: 3px;
+} 
+
+
+
+// skills section
+#skills {
+    color: #fff;
+    background-color: $black;
+    padding-bottom: 12rem;
+    padding-top: 6rem;
+} #skills .fab {
+    color: #fff;
+    font-size: 3rem;
+} .skills-section h3 {
+    text-align:center;
 }
 
-#landing .btn:hover {
-    transition: 1s;
-    background-color: $green;
-    color: #000;
-}
 
-// tools section
-#tool-box {
-    padding-top: 5rem;
-    text-align: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 8rem;
-}
 
-#tool-box span {
-    color: $red;
-}
-
-// tool box section
-.tool-box-item {
-    margin: 2rem 0;
+.about {
     padding: 2rem;
-    padding-bottom: 5rem;
-    border: 0;
-    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+    line-height: 1.6;
+    font-size: 1.2rem;
 }
 
-.tool-box-item ul {
-    list-style: none;
+.front-end-skills {
+    padding: 2rem;
 }
-
-// portfolio section
 
 #projects {
     // padding: 5rem;
     max-width: 100%;
     padding-bottom: 15rem;
+    background-color: $black;
 } #projects h1 {
     text-align: center;
-    // margin-bottom: 4rem;
 } #projects span {
-    color: $red;
+    color: $purple;
+} .section-header {
+    color: #fff;
+    margin-bottom: 5rem;
 }
 
 
@@ -196,14 +250,15 @@ header {
     border-radius: 5px;
     position: relative;
     padding-bottom: 5rem;
-    border-bottom: 2px solid $red;
+    border-bottom: 2px solid $purple;
 } .card p {
     padding: 2rem;
 } .card h1 {
     padding: 1rem;
+    color: black;
 } .card .card-btn {
     padding: .5rem 2rem;
-    background-color: $red;
+    background-color: $purple;
     text-decoration: none;
     text-align: center;
     color: white;
@@ -214,14 +269,14 @@ header {
 }  
 
 .card-btn:hover {
-    background-color: $light-blue;
+    background-color: $blue;
     transition: 1s;
 }
 
 .card-img img {
     max-width: 100%;
     max-height: auto;
-    border-bottom: 2px solid $red;
+    border-bottom: 2px solid $purple;
 }
 
 .card-button {
@@ -240,7 +295,7 @@ header {
 
 
 .card-content h2 {
-    background-color: $red;
+    background-color: $purple;
     color:#fff;
 }
 
@@ -258,7 +313,7 @@ header {
     text-decoration: none;
     padding: .5rem 2rem;
     margin: .5rem;
-    background-color: $red;
+    background-color: $purple;
     outline: none;
     border-radius: 15px;
     color: #fff;
@@ -266,7 +321,7 @@ header {
 
 .portfolio-btn:hover {
     transition: 1s;
-    background-color: $green;
+    background-color: $blue;
     color: #fff;
 }
 
@@ -275,81 +330,68 @@ header {
     margin: 1rem;
 }
 
-// about and contact section
-#about {
-    background-color: $red;
-    font-size: 1.2rem;
-    padding: 3rem;
-} 
-
-.about-content {
-    margin: 0 1rem;
-    line-height: 1.6;
-    color: white;
-}
-
-#about ul {
-    list-style: none;
-    display: flex;
-    margin: 1rem;
-    justify-content: center;
-} #about li {
-    margin: 1rem;
-}
-
-.social {
-    text-align: center;
-    margin-top: 2rem;
-} .social h2 {
-    margin-bottom: 1rem;
+// social section 
+#contact {
+    background-color: $black;
     color: #fff;
-} .social hr {
-    color: $light-blue;
-    width: 70%;
+    padding-bottom: 5rem;
+} #contact h1 {
     text-align: center;
-    margin: 0 auto;
 }
 
-.social a {
-    margin: .2rem;
-    color: #fff;
+.social-hr {
+    width: 50%;
+    margin: .3rem auto;
+}
+.fa-envelope {
     font-size: 2rem;
-    text-decoration: none;
-} .fa-github:hover {
-      transition: 1s;
-      color: #333;
-} .fa-twitter:hover {
-      transition: 1s;
-      color: #38A1F3;
-} .fa-codepen:hover {
+} .fa-envelope:hover {
     transition: 1s;
-    color: #333;
+    color: $purple;
+}
+
+.fa-github {
+    font-size: 2rem;
+} .fa-github:hover {
+    transition: 1s;
+    color: $purple;
+}
+
+.fa-linkedin-in {
+    font-size: 2rem;
 } .fa-linkedin-in:hover {
     transition: 1s;
-    color: #0077B5;
-} .fa-envelope:hover {
-    color: $riko-pink;
-    transition: 1s;
+    color: $purple;
 }
 
-.email {
-    margin: 0 2rem;
+.fa-twitter {
+    font-size: 2rem;
+} .fa-twitter:hover {
+    transition: 1s;
+    color: $purple;
 }
 
 // footer
 footer {
-    background-color: $light-blue;
+    background-color: $black;
+    color: #fff;
     text-align: center;
-    border-bottom: 2px solid $green;
 }
 
 
+//  Keyframes
+ @keyframes blinking-cursor {
+     0% { opacity: 0 }
+     50% { opacity: 1 }
+     75% { opacity: 0 }
+     100% { opacity: 0 }
+ }
 
-// Media queries
- @media screen and (min-width: 960px) {
-      // header and navigation
-    
-      .nav-toggle-label {
+//  media queries
+@media screen and (min-width: 960px) {
+
+    // navigation
+    .nav-toggle-label {
         display: none;
     }
 
@@ -375,24 +417,30 @@ footer {
 
     nav a:hover {
         transition: 1s;
-        color: $light-blue;
+        color: $purple
     }
-
-    // tool box section
-      // toolbox section
-      .tool-box-content {
+    
+    // about
+    .skills-wrapper {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
-
-    .tool-box-item {
-        padding: 3rem;
+    
+    
+    
+    .about {
+       width: 50%;
     }
+    // .about p {
+    //    width: 50%;
+    //    margin: 0 auto;  
+    // }
 
-
+    // portfolio
     .row {
         display: flex;
     }
+
 
     .card {
         margin: 0 1rem;
@@ -423,17 +471,9 @@ footer {
         padding: .75rem;
     }
 
-
-
-    // about and contact section
-    #about {
-        display: flex;
+    .social-hr {
+        width: 15%;
+        margin: .3rem auto;
     }
-    .about-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
- 
- }
 
+}

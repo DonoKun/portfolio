@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +7,19 @@
     <meta name="description" content="Front end developer from Los Angeles, California">
     <meta name="keywords" content="HTML, CSS, Javascript, Front, End, Developer">
     <title>Donovan Gomez | Web Developer</title>
-
     <!-- stylesheet -->
-    <link rel="stylesheet" href="main.css">
-
+    <link rel="Stylesheet" href="main.css">
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/426cc04b7a.js"></script>
+    <title>Donovan Gomez | Web Developer</title>
 </head>
-
 <body>
     <header>
         <h1 class="logo"><span>DG!</span> </h1>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav>
             <ul>
-                <li><a href="#tool-box">Skills</a></li>
+                <li><a href="#skills">About</a></li>
                 <li><a href="#projects">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="donovan-gomez-resume.pdf" target="_blank">Resume</a></li>
@@ -33,135 +29,107 @@
             <span><i class="fas fa-hamburger"></i></span>
         </label>
     </header>
-
     <main>
-        <!-- landing section -->
-        <section id="landing">
-            <div class="landing-content">
-                <h1>Hi I'm Donovan</h1>
-                <p>I'm a Frontend Developer</p>
-                <a href="#tool-box" class="btn">Lets Work Together</a>
-            </div>
-        </section>
-
-        <!-- tools section -->
-        <section id="tool-box">
-            <h1 class="section-header">My Toolbox <i class="fas fa-toolbox"></i></h1>
-            <div class="tool-box-content">
-                <div class="tool-box-item">
-                    <h2><span><i class="fas fa-laptop-code"></i></span> Dev</h2>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>Mobile & Responsive Design</li>
-                    </ul>
+        <!-- Hero section -->
+        <div class="hero">
+                <div class="hero-content">
+                    <h1>Hi I'm Donovan. <br> Front End Developer</h1>
+                    <div class="hero-button">
+                    <a href="#projects" class="btn hero-btn">
+                        <span>My Work</span>
+                    </a>
                 </div>
-                <div class="tool-box-item">
-                    <h2><span><i class="fas fa-paint-brush"></i></span> Design Toolkit</h2>
-                    <ul>
-                        <li>Wireframing</li>
-                        <li>AdobeXd</li>
-                    </ul>
-                </div>
-                <div class="tool-box-item">
-                    <h2><span><i class="fas fa-book-open"></i></span> Libraries & Frameworks</h2>
-                    <ul>
-                        <li>Bootstrap</li>
-                        <li>jQuery</li>
-                    </ul>
                 </div>
             </div>
-        </section>
+    
+        <!-- about and skills section -->
 
-        <!-- portfolio section -->
-        <section id="projects">
-            <h1 class="section-header"><span> #</span>Projects</h1>
-            <div class="portfolio-wrapper">
-                <div class="row">
-                    <div class="card">
-                        <h1>telsbarbershop.com</h1>
-                        <div class="card-img">
-                            <img src="images/tels-photo.png" alt="Tels Barbershop Website">
-                        </div>
-                        <p>Website for local barbershop Tel's in Santa Monica.</p>
-                        <div class="card-button">
-                            <a href="https://telsbarbershop.com/" target="_blank" class="card-btn">View Site</a>
-                            <a href="https://github.com/DonoKun/tels-barbershop" target="_blank"
-                                class="card-btn">GitHub</a>
-                        </div>
-                    </div>
-                    <!--card div-->
+<section id="skills">
+    <div class="skills-wrapper">
+        <div class="about">
+            <p>Hi, I'm Donovan. I'm a web developer from Los Angeles specializing in front end development. I love trying to make the internet look good while making sure the user has a pleasant experience. In my free time you can catch me skateboarding some spots around LA, playing fighting games or lurking on various webdev subreddits.</p>
+        </div>
+        <div class="skills-section">
+            <h3>My Toolbox:</h3>
+            <ul>
+                <li><i class="fab fa-html5"></i></li>
+                <li><i class="fab fa-css3-alt"></i></li>
+                <li><i class="fab fa-js-square"></i></li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-                    <div class="card">
-                        <h1>helpkyoani.moe</h1>
-                        <div class="card-img">
-                            <img src="images/kyoani-site.png" alt="help kyoani website">
-                        </div>
-                        <p>A website made after the arson of anime studio Kyoto Animation. Made to keep all the ways to
-                            help Kyoto Animation in one place instead of scouring social media.</p>
-                        <div class="card-button">
-                            <a href="https://helpkyoani.moe/" target="blank" class="card-btn">View Site</a>
-                            <a href="https://github.com/DonoKun/help-kyoani" target="blank" class="card-btn">GitHub</a>
-                        </div>
-                    </div>
-                    <!--card div-->
-
-                    <div class="card">
-                        <h1>Dad Joke Generator</h1>
-                        <div class="card-img">
-                            <img src="images/dad.png" alt="dad joke generator">
-                        </div>
-                        <p>Using fetch API to fetch jokes from the <a href="https://icanhazdadjoke.com/api"
-                                target="_blank">icanhazdadjoke API.</a></p>
-                        <div class="card-button">
-                            <a href="https://helpkyoani.moe/" target="blank" class="card-btn">Demo</a>
-                            <a href="https://github.com/DonoKun/help-kyoani" target="blank" class="card-btn">GitHub</a>
-                        </div>
-                    </div>
-                    <!--card div-->
-                </div>¬
-
-            </div>
-
-            </div>
-            <!--portfolio wrapper div-->
-
-        </section>
-
-        <!-- about section -->
-
-        <section id="about">
-            <div class="about-content">
-                <p>Thanks for checking out my portfolio! I really do enjoy web development/design. I'm always trying to
-                    improve in both aspects. I've concentrated a lot on the fundamentals so I can be able to learn new
-                    technologies easily. When I'm not in front of the computer learning this dev stuff I'm trying to
-                    skateboard like I did when I was 13, watching anime or playing some fighting games. </p>
-            </div>
-            <div class="social" id="contact">
-                <h2>Keep in touch</h2>
-                <hr>
-                <div class="social-media">
-                    <ul class="social">
-                        <li><a href="mailto:donovan@donovangomez.dev" class="email"><i class="far fa-envelope"></i> </a>
-                        </li>
-                        <li><a href="https://codepen.io/strawburry/" target="_blank"><i class="fab fa-codepen"></i></a>
-                        </li>
-                        <li><a href="https://github.com/DonoKun" target="_blank"><i class="fab fa-github"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/donovan-gomez-83aa57149/" target="_blank"><i
-                                    class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="https://twitter.com/_dono_kun" target="_blank"><i class="fab fa-twitter"></i></a>
-                        </li>
-                    </ul>
+<section id="projects">
+    <h1 class="section-header"><span> #</span>Projects</h1>
+    <div class="portfolio-wrapper">
+        <div class="row">
+            <div class="card">
+                <h1>telsbarbershop.com</h1>
+                <div class="card-img">
+                    <img src="images/tels-photo.png" alt="Tels Barbershop Website">
+                </div>
+                <p>Website for local barbershop Tel's in Santa Monica.</p>
+                <div class="card-button">
+                    <a href="https://telsbarbershop.com/" target="_blank" class="card-btn">View Site</a>
+                    <a href="https://github.com/DonoKun/tels-barbershop" target="_blank"
+                        class="card-btn">GitHub</a>
                 </div>
             </div>
-        </section>
+            <!--card div-->
+
+            <div class="card">
+                <h1>helpkyoani.moe</h1>
+                <div class="card-img">
+                    <img src="images/kyoani-site.png" alt="help kyoani website">
+                </div>
+                <p>A website made after the arson of anime studio Kyoto Animation. Made to keep all the ways to
+                    help Kyoto Animation in one place instead of scouring social media.</p>
+                <div class="card-button">
+                    <a href="https://helpkyoani.moe/" target="blank" class="card-btn">View Site</a>
+                    <a href="https://github.com/DonoKun/help-kyoani" target="blank" class="card-btn">GitHub</a>
+                </div>
+            </div>
+            <!--card div-->
+
+            <div class="card">
+                <h1>Dad Joke Generator</h1>
+                <div class="card-img">
+                    <img src="images/dad.png" alt="dad joke generator">
+                </div>
+                <p>Using fetch API to fetch jokes from the <a href="https://icanhazdadjoke.com/api"
+                        target="_blank">icanhazdadjoke API.</a></p>
+                <div class="card-button">
+                    <a href="https://helpkyoani.moe/" target="blank" class="card-btn">Demo</a>
+                    <a href="https://github.com/DonoKun/help-kyoani" target="blank" class="card-btn">GitHub</a>
+                </div>
+            </div>
+            <!--card div-->
+        </div>¬
+
+    </div>
+
+    </div>
+    <!--portfolio wrapper div-->
+
+</section>
+
+<section id="contact">
+    <h1>Let's keep in touch.</h1>
+    <hr class="social-hr">
+      <ul class="social-icons">
+        <li><a href="mailto:donovan@donovangomez.dev" class="email"><i class="far fa-envelope"></i> </a>
+        </li>
+        <li><a href="https://github.com/DonoKun" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/donovan-gomez-83aa57149/" target="_blank"><i
+                    class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://twitter.com/_dono_kun" target="_blank"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+</section>
 
 
-    </main>
-
-    <footer>Made with <i class="fas fa-heart"></i> &copy; 2019 </footer>
-
+</main>
+<footer>Made with <i class="fas fa-heart"></i> &copy; 2019 </footer>
 </body>
-
 </html>
