@@ -16,7 +16,8 @@ header {
   position: fixed;
   width: 100%;
   text-align: center;
-  z-index: 999; }
+  z-index: 999;
+  z-index: 99; }
 
 header nav {
   background-color: #0B0B0B;
@@ -81,19 +82,6 @@ nav a {
 .nav-toggle {
   display: none; }
 
-ul {
-  list-style: none;
-  display: flex;
-  justify-content: center; }
-
-ul a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.3rem; }
-
-ul li {
-  margin: 1rem; }
-
 .hero {
   display: flex;
   justify-content: center;
@@ -112,7 +100,8 @@ ul li {
   font-size: 3rem;
   line-height: 2;
   padding-right: 3rem;
-  padding-left: 3rem; }
+  padding-left: 3rem;
+  margin-top: 10rem; }
 
 .hero h1::after {
   content: "";
@@ -131,18 +120,18 @@ ul li {
 .hero-btn {
   color: #fff;
   text-decoration: none;
-  background-image: linear-gradient(to left, #845ec2, #7862c7, #6b66ca, #5c6ace, #4b6ed0, #4071d1, #3274d2, #2277d2, #1a7ad2, #117cd1, #077fd0, #0081cf);
-  background-size: 300%;
-  background-position: right;
+  background-image: linear-gradient(70deg, #fd767a, #ff8a5f, #fea445, #e9c034, #c7dc3e, #95e66b, #5feb99, #00edc5, #00dbed, #00c3ff, #00a4ff, #767afd);
+  background-size: 200%;
+  background-position: left;
   width: 200px;
   padding: 0;
   border-radius: 6px;
   display: block;
-  transition: 1s; }
+  transition: 2s; }
 
 .hero-btn:hover,
 .her-btn:focus {
-  background-position: left; }
+  background-position: right; }
 
 .hero-btn span {
   padding: 1rem;
@@ -284,6 +273,15 @@ ul li {
 
 #contact h1 {
   text-align: center; }
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  list-style: none; }
+
+.social-icons a {
+  padding: 1.5rem;
+  color: #fff; }
 
 .social-hr {
   width: 50%;
