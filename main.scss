@@ -199,7 +199,13 @@ header {
     font-size: 3rem;
 } .skills-section h3 {
     text-align:center;
-}
+} .front-end-skills {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+} .front-end-skills li {
+    margin: 1rem;
+} 
 
 
 
@@ -214,7 +220,7 @@ header {
 }
 
 #projects {
-    // padding: 5rem;
+    padding-top: 5rem;
     max-width: 100%;
     padding-bottom: 15rem;
     background-color: $black;

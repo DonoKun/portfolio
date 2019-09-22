@@ -154,6 +154,14 @@ nav a {
 .skills-section h3 {
   text-align: center; }
 
+.front-end-skills {
+  display: flex;
+  list-style: none;
+  justify-content: center; }
+
+.front-end-skills li {
+  margin: 1rem; }
+
 .about {
   padding: 2rem;
   line-height: 1.6;
@@ -163,6 +171,7 @@ nav a {
   padding: 2rem; }
 
 #projects {
+  padding-top: 5rem;
   max-width: 100%;
   padding-bottom: 15rem;
   background-color: #0B0B0B; }
