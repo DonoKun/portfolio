@@ -121,8 +121,8 @@ nav a {
   color: #fff;
   text-decoration: none;
   background-image: linear-gradient(70deg, #fd767a, #ff8a5f, #fea445, #e9c034, #c7dc3e, #95e66b, #5feb99, #00edc5, #00dbed, #00c3ff, #00a4ff, #767afd);
-  background-size: 200%;
-  background-position: left;
+  background-size: 180%;
+  background-position: right;
   width: 200px;
   padding: 0;
   border-radius: 6px;
@@ -131,7 +131,7 @@ nav a {
 
 .hero-btn:hover,
 .her-btn:focus {
-  background-position: right; }
+  background-position: left; }
 
 .hero-btn span {
   padding: 1rem;
@@ -370,7 +370,10 @@ footer {
     width: 50%; }
 
   .row {
-    display: flex; }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
 
   .card {
     margin: 0 1rem;
